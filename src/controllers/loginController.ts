@@ -1,6 +1,5 @@
-import { Router, Request, Response, NextFunction } from 'express';
-import { get } from './decorators/routes';
-import { controller } from './decorators/controller';
+import { Request, Response, NextFunction } from 'express';
+import { get, controller } from './decorators';
 
 @controller('/auth')
 class LoginController {
@@ -10,7 +9,7 @@ class LoginController {
     <form method="POST">
     <div>
     <label>Email</label>
-    <input name="email" />
+    <input name="email" />§
     </div>
     <div>
     <label>Password</label>
